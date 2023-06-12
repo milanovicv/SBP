@@ -6,7 +6,7 @@ Pregled restruktuirane sheme baze podataka, koja je dobijena primenom šablona p
 
 Kolekcija RESULTS
 
-db = db.getSiblingDB("formula1");
+~~~ db = db.getSiblingDB("formula1");
 db.getCollection("results").aggregate([
   {
     $lookup: {
@@ -90,9 +90,10 @@ db.getCollection("results").aggregate([
           coll: "results"
       }
   }
-]);
+]); ~~~
 
 Polja: 
+
     • resultsId – identifikaciona oznaka rezultata
     • race – nested document sa poljima raceId, name i circuit (dodatni nested document sa poljima circuitId, name)
     • driver - nested document sa poljima driverId, forename, surname
@@ -177,6 +178,7 @@ db.getCollection("constructor_standings").aggregate([
 ]);
 
 Polja: 
+
     • _id - identifikaciona oznaka, nested document sa poljima raceId i constructorId
     • raceYear - godina u okviru koje se desila trka
     • constructorName - naziv konstruktora
@@ -252,7 +254,8 @@ db.getCollection("lap_times").aggregate([
   }
 ]);
 
-Polja: 
+Polja:
+
     • _id - identifikaciona oznaka, nested document sa poljima circuitId i driverId
     • averageLapTime - prosečno vreme odvozanog kruga
     • driverName - ime vozača
@@ -315,5 +318,6 @@ db.getCollection("driver_standings").aggregate([
 
 
 Polja: 
+
     • _id - identifikaciona oznaka, nested document sa poljima season, driverId, driverName
     • averagePointsPerRace - prosečan broj poena vožača na trci
