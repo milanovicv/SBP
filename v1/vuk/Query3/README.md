@@ -2,6 +2,8 @@
 
 Kod upita:
 
+~~~
+
 db = db.getSiblingDB("formula1");
 db.getCollection("lap_times").aggregate([
   {
@@ -65,5 +67,7 @@ db.getCollection("lap_times").aggregate([
     }
   }
 ]);
+
+~~~
 
 Brzina izvr�avanja: 264s

@@ -2,6 +2,8 @@
 
 Kod upita:
 
+~~~
+
 db = db.getSiblingDB("formula1");
 db.getCollection("constructor_standings").aggregate([
   {
@@ -79,5 +81,7 @@ db.getCollection("constructor_standings").aggregate([
     }
   }
 ]);
+
+~~~
 
 Brzina izvršavanja: 5.74s
