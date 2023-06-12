@@ -90,7 +90,7 @@ db.getCollection("results").aggregate([
           coll: "results"
       }
   }
-]); ~~~
+]);
 
 Polja: 
 
@@ -321,3 +321,5 @@ Polja:
 
     • _id - identifikaciona oznaka, nested document sa poljima season, driverId, driverName
     • averagePointsPerRace - prosečan broj poena vožača na trci
+
+~~~
