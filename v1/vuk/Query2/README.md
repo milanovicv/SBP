@@ -73,7 +73,7 @@ db.getCollection("driver_standings").aggregate([
 
 ~~~
 
-Brzina izvr�avanja: 15.98s
+Brzina izvršavanja: 15.98s
 
 
 

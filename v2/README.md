@@ -323,3 +323,7 @@ Polja:
     • averagePointsPerRace - prosečan broj poena vožača na trci
 
 ~~~
+
+# Zaključak
+
+Primetno je da operacije $lookup i $unwind, koje imaju ulogu u spajanju dokumenata iz različitih kolekcija, po referenci, produžavaju vreme izvršavanja upita značajno. S toga, prilikom optimizacije i restruktuiranja sheme, i ujedno primenom šablona proširene reference i šablona aproksimacije vreme izvršavanja se dosta smanjilo, pogotovo u kod upita koji su bili višeminutni, a koji su se na kraju sveli red veličine nekoliko milisekundi. 

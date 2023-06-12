@@ -91,4 +91,4 @@ db.getCollection("results").aggregate([
 
 ~~~
 
-Brzina izvr�avanja: 22.5s
+Brzina izvršavanja: 22.5s

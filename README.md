@@ -38,3 +38,5 @@ Upiti
 Implementacija
 
 Implementacioni deo projekta se nalazi u glavnom direktorijumu.
+
+# Statistika i grafici

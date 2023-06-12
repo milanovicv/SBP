@@ -70,4 +70,4 @@ db.getCollection("lap_times").aggregate([
 
 ~~~
 
-Brzina izvr�avanja: 264s
+Brzina izvršavanja: 264s
