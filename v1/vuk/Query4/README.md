@@ -1,6 +1,6 @@
-# Upit 4 - Napiši kratku statistiku o tome kakav u?inak ima svako od voza?a, na svim stazama na kojima je nastupao. Ispisati za svaku stazu koliko je poena na njoj osvojio, koliko je krugova odvozao i koju je maksimalnu brzinu dostigao. Tako?e napisati i puno ime voza?a.
+# Upit 4 - Napiï¿½i kratku statistiku o tome kakav u?inak ima svako od voza?a, na svim stazama na kojima je nastupao. Ispisati za svaku stazu koliko je poena na njoj osvojio, koliko je krugova odvozao i koju je maksimalnu brzinu dostigao. Tako?e napisati i puno ime voza?a.
 
-Kod upita
+Kod upita:
 
 db = db.getSiblingDB("formula1");
 db.getCollection("results").aggregate([
@@ -87,4 +87,4 @@ db.getCollection("results").aggregate([
   }
 ]);
 
-Brzina izvršavanja: 22.5s
+Brzina izvrï¿½avanja: 22.5s

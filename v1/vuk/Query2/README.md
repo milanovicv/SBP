@@ -1,6 +1,6 @@
 # Upit 2 - Ispisi 3 najbolja voza?a sa najve?im prose?nim brojem poena po trci kroz svaku sezonu.
 
-Kod upita
+Kod upita:
 
 db = db.getSiblingDB("formula1");
 db.getCollection("driver_standings").aggregate([
@@ -69,7 +69,7 @@ db.getCollection("driver_standings").aggregate([
   }
 ]);
 
-Brzina izvršavanja: 15.98s
+Brzina izvrï¿½avanja: 15.98s
 
 
 

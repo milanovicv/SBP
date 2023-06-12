@@ -1,6 +1,6 @@
 # Upit 1 - Za svaku sezonu navesti top 3 konstruktora koji su imali najviše pobeda.
 
-Kod upita
+Kod upita:
 
 db = db.getSiblingDB("formula1");
 db.getCollection("constructor_standings").aggregate([

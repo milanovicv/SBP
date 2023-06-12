@@ -1,6 +1,6 @@
 # Upit 3 - Odredi za svaku stazu voza?a koji je imao najve?u prose?nu brzinu odvozanog jednog kruga.
 
-Kod upita
+Kod upita:
 
 db = db.getSiblingDB("formula1");
 db.getCollection("lap_times").aggregate([
@@ -66,4 +66,4 @@ db.getCollection("lap_times").aggregate([
   }
 ]);
 
-Brzina izvršavanja: 264s
+Brzina izvrï¿½avanja: 264s

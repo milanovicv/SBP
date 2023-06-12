@@ -6,7 +6,8 @@ Pregled kolekcija iz baze podataka, kao i njihovih međusobnih odnosa.
 
 Kolekcija CIRCUITS
 
-Polja: 
+Polja:
+
     • circuitId - identifikaciona oznaka staze
     • circuitRef – skraćena oznaka 
     • name – ime staze
@@ -19,7 +20,8 @@ Polja:
 
 Kolekcija CONSTRUCTOR_RESULTS
 
-Polja: 
+Polja:
+
     • constructorResultsId – identifikaciona oznaka
     • raceId – referenca ka odgovarajućoj trci
     • constructorId – referenca ka odgovarajućem kontruktoru
@@ -28,7 +30,8 @@ Polja:
 
 Kolekcija CONSTRUCTOR_STANDINGS
 
-Polja: 
+Polja:
+
     • constructorStandingsId – identifikaciona oznaka
     • raceId – referenca ka odgovarajućoj trci
     • constructorId – referenca ka odgovarajućem kontruktoru
@@ -40,6 +43,7 @@ Polja:
 Kolekcija  CONSTRUCTOR
 
 Polja: 
+
     • constructorId – identifikaciona oznaka konstruktora
     • constructorRef – skraćen naziv
     • name – ime
@@ -49,6 +53,7 @@ Polja:
 Kolekcija DRIVER_STANDINGS
 
 Polja: 
+
     • driverStandingsId – identifikaciona oznaka
     • raceId – referenca ka odgovarajućoj trci
     • driverId – referenca ka odgovarajućem vozaču
@@ -60,6 +65,7 @@ Polja:
 Kolekcija DRIVERS
 
 Polja: 
+
     • driverId – identifikaciona oznaka vozača
     • driverRef – skraćena oznaka
     • number
@@ -73,6 +79,7 @@ Polja:
 Kolekcija LAP_TIMES
 
 Polja: 
+
     • raceId – referenca ka odgovarajućoj trci
     • driverId – referenca ka odgovarajućem vozaču
     • lap – broj kruga
@@ -83,6 +90,7 @@ Polja:
 Kolekcija PIT_STOPS
 
 Polja: 
+
     • raceId – referenca ka odgovarajućoj trci
     • driverId – referenca ka odgovarajućem vozaču
     • stop
@@ -94,6 +102,7 @@ Polja:
 Kolekcija QUALIFYING
 
 Polja: 
+
     • qualifyId – identifikaciona oznaka
     • raceId – referenca ka odgovarajućoj trci
     • driverId – referenca ka odgovarajućem vozaču
@@ -107,6 +116,7 @@ Polja:
 Kolekcija RACES
 
 Polja: 
+
     • raceId – identifikaciona oznaka trke
     • year – godina kada se održala trka
     • round
@@ -128,7 +138,8 @@ Polja:
 
 Kolekcija RESULTS
 
-Polja: 
+Polja:
+
     • resultsId – identifikaciona oznaka rezultata
     • raceId – referenca ka odgovarajućoj trci
     • driverId – referenca ka odgovarajućem vozaču
@@ -152,6 +163,7 @@ Polja:
 Kolekcija SEASONS
 
 Polja: 
+
     • year
     • url
 
@@ -159,6 +171,7 @@ Polja:
 Kolekcija SPRINT_RESULTS
 
 Polja: 
+
     • resultsId – referenca ka result kolekciji
     • raceId – referenca ka odgovarajućoj trci
     • driverId – referenca ka odgovarajućem vozaču
@@ -179,6 +192,7 @@ Polja:
 Kolekcija STATUS
 
 Polja: 
+
     • statusId – identifikaciona oznaka statusa
     • status
 

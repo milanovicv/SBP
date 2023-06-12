@@ -1,6 +1,6 @@
-# Upit 5 - Prikaži najbolja 3 italijanska konstruktora u Formuli 1. U zapisu konstruktora je neophodno da budu voza?i, kao i ime konstruktora i ukupan broj poena koji su osvojili voza?i tih konstruktora.
+# Upit 5 - Prikaï¿½i najbolja 3 italijanska konstruktora u Formuli 1. U zapisu konstruktora je neophodno da budu voza?i, kao i ime konstruktora i ukupan broj poena koji su osvojili voza?i tih konstruktora.
 
-Kod upita
+Kod upita:
 
 db = db.getSiblingDB("formula1");
 db.getCollection("results").aggregate([
@@ -84,4 +84,4 @@ db.getCollection("results").aggregate([
   }
 ])
 
-Brzina izvršavanja: 11.83s
+Brzina izvrï¿½avanja: 11.83s
