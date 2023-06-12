@@ -113,7 +113,11 @@ Polja:
     • fastestLapSpeed – najveća dostignuta brzina
     • stat - nested document sa poljima statusId, status
 
+~~~
+
 Kolekcija BEST_CONSTRUCTORS_PER_SEASON
+
+~~~
 
 db = db.getSiblingDB("formula1");
 db.getCollection("constructor_standings").aggregate([
@@ -184,8 +188,11 @@ Polja:
     • constructorName - naziv konstruktora
     • wins - broj pobeda
 
+~~~
 
 Kolekcija FASTEST_DRIVERS_ON_EACH_CIRCUIT
+
+~~~
 
 db = db.getSiblingDB("formula1");
 db.getCollection("lap_times").aggregate([
@@ -261,7 +268,11 @@ Polja:
     • driverName - ime vozača
     • circuitName - ime staze
 
+~~~
+
 Kolekcija MOST_POINTS_DRIVERS_PER_SEASON
+
+~~~
 
 db = db.getSiblingDB("formula1");
 db.getCollection("driver_standings").aggregate([
