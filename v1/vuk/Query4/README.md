@@ -1,4 +1,4 @@
-# Upit 4 - Napi�i kratku statistiku o tome kakav u?inak ima svako od voza?a, na svim stazama na kojima je nastupao. Ispisati za svaku stazu koliko je poena na njoj osvojio, koliko je krugova odvozao i koju je maksimalnu brzinu dostigao. Tako?e napisati i puno ime voza?a.
+# Upit 4 - Napiši kratku statistiku o tome kakav učinak ima svako od vozača, na svim stazama na kojima je nastupao. Ispisati za svaku stazu koliko je poena na njoj osvojio, koliko je krugova odvozao i koju je maksimalnu brzinu dostigao. Takođe napisati i puno ime vozača.
 
 Kod upita:
 

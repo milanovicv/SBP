@@ -1,4 +1,4 @@
-# Upit 3 - Odredi za svaku stazu voza?a koji je imao najve?u prose?nu brzinu odvozanog jednog kruga.
+# Upit 3 - Odredi za svaku stazu vozača koji je imao najveću prosečnu brzinu odvozanog jednog kruga.
 
 Kod upita:
 

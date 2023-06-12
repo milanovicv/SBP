@@ -1,4 +1,4 @@
-# Upit 5 - Prika�i najbolja 3 italijanska konstruktora u Formuli 1. U zapisu konstruktora je neophodno da budu voza?i, kao i ime konstruktora i ukupan broj poena koji su osvojili voza?i tih konstruktora.
+# Upit 5 - Prikaži najbolja 3 italijanska konstruktora u Formuli 1. U zapisu konstruktora je neophodno da budu vozači, kao i ime konstruktora i ukupan broj poena koji su osvojili vozači tih konstruktora.
 
 Kod upita:
 

@@ -1,4 +1,4 @@
-# Upit 2 - Ispisi 3 najbolja voza?a sa najve?im prose?nim brojem poena po trci kroz svaku sezonu.
+# Upit 2 - Ispisi 3 najbolja vozača sa najvećim prosečnim brojem poena po trci kroz svaku sezonu.
 
 Kod upita:
 
