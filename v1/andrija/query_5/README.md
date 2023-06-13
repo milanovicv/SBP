@@ -91,4 +91,10 @@ db.getCollection("results").aggregate(
 
 ~~~
 
-Brzina izvršavanja: 7.24s
+Rezultat Explain opcije:
+
+![Alt text](/v1/andrija/query_5/query_5_explain.png)
+
+Primer izlaznog dokumenta:
+
+![Alt text](/v1/andrija/query_5/query_5_output.png)

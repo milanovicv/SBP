@@ -85,4 +85,10 @@ db.getCollection("races").aggregate(
 
 ~~~
 
-Brzina izvršavanja: 495s
+Rezultat Explain opcije:
+
+![Alt text](/v1/andrija/query_4/query_4_explain.png)
+
+Primer izlaznog dokumenta:
+
+![Alt text](/v1/andrija/query_4/query_4_output.png)

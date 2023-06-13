@@ -72,4 +72,10 @@ db.getCollection("qualifying").aggregate(
 
 ~~~
 
-Brzina izvršavanja: 88s
+Rezultat Explain opcije:
+
+![Alt text](/v1/andrija/query_3/query_3_explain.png)
+
+Primer izlaznog dokumenta:
+
+![Alt text](/v1/andrija/query_3/query_3_output.png)

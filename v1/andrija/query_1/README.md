@@ -1,4 +1,5 @@
-# Upit 1 - Pronaći i ispisati sve vozače koji su završili trku u top 5 pozicija, a u kojoj su imali najduže vreme zadržavanja u pitu.
+# Upit 1 - Pronaći i ispisati sve vozače koji su završili trku u top 5 pozicija, 
+u kojoj su imali najduže vreme zadržavanja u pitu.
 
 Kod upita:
 
@@ -111,7 +112,12 @@ db.getCollection("pit_stops").aggregate(
 
 
 ~~~
+Rezultat Explain opcije:
 
-![Alt text](/v1/andrija/query_1/query_1.png)
+![Alt text](/v1/andrija/query_1/query_1_explain.png)
 
-Brzina izvršavanja: 7.6s
+Primer izlaznog dokumenta:
+
+![Alt text](/v1/andrija/query_1/query_1_output.png)
+
+

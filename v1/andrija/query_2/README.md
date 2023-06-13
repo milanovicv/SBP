@@ -83,8 +83,12 @@ db.getCollection("driver_standings").aggregate(
 
 ~~~
 
-Brzina izvršavanja: 29.32s
+Rezultat Explain opcije:
 
+![Alt text](/v1/andrija/query_2/query_2_explain.png)
 
+Primer izlaznog dokumenta:
+
+![Alt text](/v1/andrija/query_2/query_2_output.png)
 
 
