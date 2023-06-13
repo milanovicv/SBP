@@ -40,3 +40,7 @@ Implementacija
 Implementacioni deo projekta se nalazi u glavnom direktorijumu.
 
 # Statistika i grafici
+
+![Alt text](/statistics/TimeStatistics.png)
+
+![Alt text](/statistics/DocumentStatistics.png)
