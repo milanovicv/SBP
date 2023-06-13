@@ -119,5 +119,7 @@ Upotreba indeksa:
 
 ![Alt text](/v2/andrija/query_1/query_1_index.png)
 
+~~~
 Zaključak:
   • Primećeno je usko grlo prilikom spajanja tabela, tako da se uvođenjem indeksa za raceId dobija potpuno optimizovan upit.
+~~~
