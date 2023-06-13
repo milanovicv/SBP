@@ -1,5 +1,4 @@
-# Upit 3 - Za svaku kvalifikacionu trku, ispisati proizvođača čiji su vozači ostvarili najveći broj poena u zbiru.
-Prikazati ime trke, ime proizvođača i broj ostvarenih poena.
+# Upit 3 - Za svaku kvalifikacionu trku, ispisati proizvođača čiji su vozači ostvarili najveći broj poena u zbiru. Prikazati ime trke, ime proizvođača i broj ostvarenih poena.
 
 Kod upita:
 

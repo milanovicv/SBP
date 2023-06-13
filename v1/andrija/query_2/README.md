@@ -1,5 +1,4 @@
-# Upit 2 - Za svakog vozača odrediti koliko puta je napravio pit stop, za svaku trku u kojoj je osvojio neko od 
-prva tri mesta. Ispisati ime i prezime vozača, sve trke na kojima je bio u top tri kao i vrednost sume.
+# Upit 2 - Za svakog vozača odrediti koliko puta je napravio pit stop, za svaku trku u kojoj je osvojio neko od prva tri mesta. Ispisati ime i prezime vozača, sve trke na kojima je bio u top tri kao i vrednost sume.
 
 Kod upita:
 

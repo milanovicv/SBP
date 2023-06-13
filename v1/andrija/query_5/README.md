@@ -1,5 +1,4 @@
-# Upit 5 - Pronaći, za svaku sezonu, vozača koji je odvozao najviše uspešnih trka, odnosno trka koje kao rezultat imaju 
-status "FINISHED". Ispisati informacije o vozaču kao i o broju odvozanih trka.
+# Upit 5 - Pronaći, za svaku sezonu, vozača koji je odvozao najviše uspešnih trka, odnosno trka koje kao rezultat imaju status "FINISHED". Ispisati informacije o vozaču kao i o broju odvozanih trka.
 
 Kod upita:
 
