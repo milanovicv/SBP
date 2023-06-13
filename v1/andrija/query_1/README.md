@@ -1,4 +1,4 @@
-# Upit 1 - Pronaći i ispisati sve vozače koji su završili trku u top 5 pozicija, u kojoj su imali najduže vreme zadržavanja u pitu.
+# Upit 1 - Za svaku trku, pronaći vozača, koji je završio u top 5 pozicija, a pritom je u toj trci imao najduže vreme zadržavanja u pit-u. Ispisati id trke, informacije o vozaču kao i maksimalno vreme zadržavanja.
 
 Kod upita:
 
