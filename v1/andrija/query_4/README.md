@@ -1,4 +1,6 @@
-# Upit 4 - Pronaći one vozače koji su bili više od 3 puta prvi na kraju , bilo kojeg, kruga trke koje su odvozali u karijeri.
+# Upit 4 - Pronaći one vozače koji su bili više od 3 puta prvi na kraju kruga
+bilo koje trke na kojoj su učestvovali do sada u karijeri. Ispisati id vozača, id trke kao i broj krugova
+na kojima je vozač zauzeo prvo mesto
 
 Kod upita:
 
