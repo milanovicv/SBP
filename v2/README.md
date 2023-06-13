@@ -411,7 +411,7 @@ Polja:
 
 ~~~
 
-Kolekcija DRIVERS_LAP_POSITIONS_PER_RACE
+Kolekcija DRIVER_LAP_POSITIONS_PER_RACE
 
 ~~~
 
