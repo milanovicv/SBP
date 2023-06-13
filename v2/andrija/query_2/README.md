@@ -88,7 +88,7 @@ Rezultat Explain opcije:
 
 Upotreba indeksa:
 
-![Alt text](/v2/andrija/query_1/query_2_index.png)
+![Alt text](/v2/andrija/query_2/query_2_index.png)
 
 ~~~
 Zaključak:
