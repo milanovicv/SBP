@@ -112,4 +112,6 @@ db.getCollection("pit_stops").aggregate(
 
 ~~~
 
+![Alt text](/v1/andrija/query_1/query_1.png)
+
 Brzina izvršavanja: 7.6s
