@@ -335,6 +335,216 @@ Polja:
 
 ~~~
 
+Kolekcija CONSTRUCTOR_QUALIFY_RACE_STANDINGS
+
+~~~
+db = db.getSiblingDB("formula1");
+db.getCollection("qualifying").aggregate(
+    [
+        {
+            "$lookup" : {
+                "from" : "races",
+                "localField" : "raceId",
+                "foreignField" : "raceId",
+                "as" : "races"
+            }
+        }, 
+        {
+            "$unwind" : {
+                "path" : "$races"
+            }
+        }, 
+        {
+            "$lookup" : {
+                "from" : "constructor_standings",
+                "localField" : "races.raceId",
+                "foreignField" : "raceId",
+                "as" : "standings"
+            }
+        }, 
+        {
+            "$unwind" : {
+                "path" : "$standings"
+            }
+        }, 
+        {
+            "$lookup" : {
+                "from" : "constructors",
+                "localField" : "standings.constructorId",
+                "foreignField" : "constructorId",
+                "as" : "constructor"
+            }
+        }, 
+        {
+            "$project" : {
+    		"_id" : 0,
+    		"qualifyId" : 1,
+    		"raceId" : 1,
+    		"driverId" : 1,
+    		"constructorId" : 1,
+    		"raceName": "$races.name",
+    		"points": "$standings.points",
+    		"constructorName": "$constructor.name",
+            }
+        }, 
+        {
+            "$out" : {
+                "db" : "formula1-v2",
+                "coll" : "refactored-qualifying"
+            }
+        }
+    ], 
+    {
+        "allowDiskUse" : false,
+        "hint" : "_id_"
+    }
+);
+
+Polja:
+    • qualifyId - identifikaciona oznaka kvalifikacije
+    • raceId - identifikaciona oznaka trke
+    • driverId - identifikaciona oznaka vozača
+    • constructorId - identifikaciona oznaka proizvođača
+    • points - broj ostvarenih poena
+    • raceName - naziv trke
+    • constructorName - naziv proizvođača
+
+~~~
+
+Kolekcija DRIVERS_LAP_POSITIONS_PER_RACE
+
+~~~
+
+db = db.getSiblingDB("formula1");
+db.getCollection("races").aggregate(
+    [
+        {
+            "$lookup" : {
+                "from" : "lap_times",
+                "localField" : "raceId",
+                "foreignField" : "raceId",
+                "as" : "lap_time"
+            }
+        }, 
+        {
+            "$unwind" : {
+                "path" : "$lap_time"
+            }
+        }, 
+        {
+            "$lookup" : {
+                "from" : "drivers",
+                "localField" : "lap_time.driverId",
+                "foreignField" : "driverId",
+                "as" : "driver"
+            }
+        }, 
+        {
+            "$unwind" : {
+                "path" : "$driver"
+            }
+        }, 
+        {
+            "$project" : {
+                "_id" : NumberInt(0),
+                "raceId" : NumberInt(1),
+                "lap" : "$lap_time.lap",
+                "position" : "$lap_time.position",
+                "driverId" : "$driver.driverId",
+                "driverForename" : "$driver.forename",
+                "driverSurname" : "$driver.surname"
+            }
+        }, 
+        {
+            "$out" : {
+                "db" : "formula1-v2",
+                "coll" : "refactored-races"
+            }
+        }
+    ], 
+    {
+        "allowDiskUse" : false
+    }
+);
+
+
+
+Polja:
+    • raceId - identifikaciona oznaka trke
+    • driverId - identifikaciona oznaka vozača
+    • driverForename - ime vozača
+    • driverSurname - prezime vozača
+    • lap - broj kruga
+    • position - pozicija vozača na kraju kruga
+
+~~~
+
+Kolekcija DRIVERS_FINISHED_RACES_PER_SEASON
+
+~~~
+
+db = db.getSiblingDB("formula1");
+db.getCollection("results").aggregate(
+    [
+        {
+            "$match" : {
+                "statusId" : NumberInt(1)
+            }
+        }, 
+        {
+            "$lookup" : {
+                "from" : "drivers",
+                "localField" : "driverId",
+                "foreignField" : "driverId",
+                "as" : "driver"
+            }
+        }, 
+        {
+            "$lookup" : {
+                "from" : "races",
+                "localField" : "raceId",
+                "foreignField" : "raceId",
+                "as" : "race"
+            }
+        }, 
+        {
+            "$unwind" : {
+                "path" : "$driver"
+            }
+        }, 
+        {
+            "$project" : {
+                "_id" : NumberInt(0),
+                "seasonYear" : "$race.year",
+                "driverId" : NumberInt(1),
+                "driverName" : {
+                    "$concat" : [
+                        "$driver.forename",
+                        " ",
+                        "$driver.surname"
+                    ]
+                }
+            }
+        }, 
+        {
+            "$out" : {
+                "db" : "formula1-v2",
+                "coll" : "refactored-results"
+            }
+        }
+    ], 
+    {
+        "allowDiskUse" : false
+    } 
+);
+
+Polja:
+    • driverId - identifikaciona oznaka vozača
+    • driverName - ime i prezime vozača
+    • seasonYear - sezona
+
+~~~
+
 # Zaključak
 
-Primetno je da operacije $lookup i $unwind, koje imaju ulogu u spajanju dokumenata iz različitih kolekcija, po referenci, produžavaju vreme izvršavanja upita značajno. S toga, prilikom optimizacije i restruktuiranja sheme, i ujedno primenom šablona proširene reference i šablona aproksimacije vreme izvršavanja se dosta smanjilo, pogotovo u kod upita koji su bili višeminutni, a koji su se na kraju sveli red veličine nekoliko milisekundi. 
+Primetno je da operacije $lookup i $unwind, koje imaju ulogu u spajanju dokumenata iz različitih kolekcija, po referenci, produžavaju vreme izvršavanja upita značajno. S toga, prilikom optimizacije i restruktuiranja sheme, i ujedno primenom šablona proširene reference i šablona aproksimacije vreme izvršavanja se dosta smanjilo, pogotovo kod upita koji su bili višeminutni, a koji su se na kraju sveli red veličine nekoliko milisekundi. 

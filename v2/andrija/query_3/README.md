@@ -9,16 +9,10 @@ db.getCollection("refactored-qualifying").aggregate(
     [
         {
             "$group" : {
-                "_id" : "$qualifyId",
-                "maxPoints" : {
-                    "$max" : "$standings.points"
-                },
-                "constructor" : {
-                    "$first" : "$constructor.name"
-                },
-                "raceName" : {
-                    "$first" : "$races.name"
-                }
+     		_id: "$qualifyId",
+      		maxPoints: { $max: "$points" },
+      		constructor: { $first: "$constructorName" },
+      		raceName: {$first: "$raceName"}
             }
         }, 
         {

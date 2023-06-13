@@ -11,11 +11,11 @@ db.getCollection("refactored-races").aggregate(
             "$group" : {
                 "_id" : {
                     "raceId" : "$raceId",
-                    "driverId" : "$lap_time.driverId",
-                    "lap" : "$lap_time.lap"
+                    "driverId" : "$driverId",
+                    "lap" : "$lap"
                 },
                 "position" : {
-                    "$first" : "$lap_time.position"
+                    "$first" : "$position"
                 }
             }
         }, 
