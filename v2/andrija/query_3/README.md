@@ -1,5 +1,4 @@
-# Upit 3 (optimizovan) - Za svaku kvalifikacionu trku, ispisati proizvođača čiji su vozači ostvarili najveći broj poena u zbiru.
-Prikazati ime trke, ime proizvođača i broj ostvarenih poena.
+# Upit 3 (optimizovan) - Za svaku kvalifikacionu trku, ispisati proizvođača čiji su vozači ostvarili najveći broj poena u zbiru. Prikazati ime trke, ime proizvođača kao i broj ostvarenih poena.
 
 Kod upita:
 
@@ -38,4 +37,6 @@ db.getCollection("refactored-qualifying").aggregate(
 
 ~~~
 
-Brzina izvršavanja: 0.07s
+Rezultat Explain opcije:
+
+![Alt text](/v2/andrija/query_3/query_3_explain.png)

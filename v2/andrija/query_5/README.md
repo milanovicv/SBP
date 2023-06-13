@@ -1,5 +1,4 @@
-# Upit 5 (optimizovan)- Pronaći, za svaku sezonu, vozača koji je odvozao najviše uspešnih trka, odnosno trka koje kao rezultat imaju 
-status "FINISHED". Ispisati informacije o vozaču kao i o broju odvozanih trka.
+# Upit 5 (optimizovan)- Pronaći, za svaku sezonu, vozača koji je odvozao najviše uspešnih trka, odnosno trka koje kao rezultat imaju status FINISHED. Prikazati sezonu, ime vozača kao i broj uspešno odvozanih trka.
 
 Kod upita:
 
@@ -56,4 +55,8 @@ db.getCollection("refactored-results").aggregate(
 
 ~~~
 
-Brzina izvršavanja: 0.09s
+Rezultat Explain opcije:
+
+![Alt text](/v2/andrija/query_5/query_5_explain.png)
+
+

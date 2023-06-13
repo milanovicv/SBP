@@ -1,4 +1,4 @@
-# Upit 4 (optimizovan)- Pronaći one vozače koji su bili više od 3 puta prvi na kraju , bilo kojeg, kruga trke koje su odvozali u karijeri.
+# Upit 4 (optimizovan)- Pronaći one vozače koji su bili više od 3 puta prvi na kraju kruga bilo koje trke na kojoj su učestvovali do sada u karijeri. Ispisati id vozača, id trke kao i broj krugova na kojima je vozač zauzeo prvo mesto.
 
 Kod upita:
 
@@ -64,4 +64,6 @@ db.getCollection("refactored-races").aggregate(
 
 ~~~
 
-Brzina izvršavanja: 2.4s
+Rezultat explain opcije:
+
+![Alt text](/v2/andrija/query_4/query_4_explain.png)
