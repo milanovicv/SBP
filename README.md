@@ -35,6 +35,13 @@ Upiti
 4. Napiši kratku statistiku o tome kakv učinak ima svako od vozača, na svim stazama na kojima je nastupao. Ispisati za svaku stazu koliko je poena na njoj osvojio, broj krugova koji je odvozao i koju je maksimalnu brzinu dostigao. Takođe napisati i puno ime vozača.
 5. Prikaži najbolja tri italijanska konstruktora u Formuli 1. U zapisu konsturktora je neophodno da budu vozači, kao i ime konstruktora, i ukupan broj poena koji su osvojili vozači tih konstruktora.
 
+6. Za svaku trku, pronaći vozača, koji je završio u top 5 pozicija, a pritom je u toj trci imao najduže vreme zadržavanja u pit-u. Ispisati id trke, informacije o vozaču kao i maksimalno vreme zadržavanja.
+7. Za svakog vozača odrediti koliko puta je napravio pit stop, za svaku trku u kojoj je osvojio neko od prva tri mesta. Ispisati ime i prezime vozača, sve trke na kojima je bio u top tri kao i vrednost sume.
+8. Za svaku kvalifikacionu trku, ispisati proizvođača čiji su vozači ostvarili najveći broj poena u zbiru. Prikazati ime trke, ime proizvođača kao i broj ostvarenih poena.
+9. Pronaći one vozače koji su bili više od 3 puta prvi na kraju kruga bilo koje trke na kojoj su učestvovali do sada u karijeri. Ispisati id vozača, id trke kao i broj krugova na kojima je vozač zauzeo prvo mesto.
+10. Pronaći, za svaku sezonu, vozača koji je odvozao najviše uspešnih trka, odnosno trka koje kao rezultat imaju status FINISHED. Prikazati sezonu, ime vozača kao i broj uspešno odvozanih trka.
+ 
+
 Implementacija
 
 Implementacioni deo projekta se nalazi u glavnom direktorijumu.
